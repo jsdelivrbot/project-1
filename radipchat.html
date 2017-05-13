@@ -126,7 +126,7 @@ h1 {
 
 #main {
 	position: absolute;
-	top: 40px;
+	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -143,14 +143,6 @@ h1 {
 	margin: 0;
 }
 
-#fscont {
-	
-}
-
-#footer {
-	
-}
-
 #credit {
 	font-size: 13px;
 	float: right;
@@ -164,9 +156,6 @@ h1 {
 }
 
 @media (max-height: 300px) {
-
-	#header {
-		display: none;
 	}
 	#main {
 		top: 0;
@@ -196,23 +185,12 @@ if (window['sslMode'] && wl.protocol !== "https:") {
 </script>
 </head>
 <body>
-<div id="notice">
-	<div class="wrap" id="noticeBody">
-
-	</div>
-</div>
-
 <div id="main">
 	<div class="wrap">
 		<div id="fscont">
 				<iframe allowtransparency="yes" frameborder="0" width="100%" height="100%" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;" src="//www4.cbox.ws/box/?boxid=4334004&boxtag=UlBHZu" marginheight="0" marginwidth="0" scrolling="no" name="cboxform"></iframe>		</div>
 	</div>
 </div>
-
-<div id="footer">
-
-</div>
-
 <script>
 var flashTitle=function(){},cbxIsFocused=!1,updateFavicon=function(){var a=document.createElement("canvas"),c=document.createElement("link");if(!a.getContext)return function(){};var b=a.getContext("2d");a.height=a.width=16;return function(d){b.font='bold 11px "Helvetica", "Tahoma", sans-serif';b.fillStyle="#dd2211";b.clearRect(0,0,a.width,a.height);isNaN(d)||b.fillText(50>1*d?1*d:"50+",0,12);c.rel="icon";c.type="image/png";c.href=a.toDataURL("image/png");c.parentNode!==document.head&&document.head.appendChild(c)}}(),
 unread=0,oTitle=document.title,enableNotify=function(){unread=0;flashTitle=oFlashTitle=function(){if(cbxIsFocused)return!1;updateFavicon(++unread);document.title="[New] "+oTitle;flashTitle=function(){};window.setTimeout(function(){document.title=oTitle;flashTitle=oFlashTitle},5E3)}},disableNotify=function(){unread=0;updateFavicon();document.title=oTitle;flashTitle=function(){}};window.onblur=enableNotify;window.onfocus=disableNotify;
